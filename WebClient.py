@@ -1,6 +1,6 @@
 from socket import *
 
-#Setting the host and the port
+# Setting the host and the port
 HOST = "127.0.0.1"
 PORT = 80
 
@@ -31,7 +31,7 @@ while True:
 status_code = int(response.split(b"\r\n")[0].split()[1])
 
 # Extract headers from the response
-headers = response.split(b"\r\n\r\n")[0]
+headers = response.split(b"\r\n\r\n")
 
 # Print status code
 print("status code:",status_code)
