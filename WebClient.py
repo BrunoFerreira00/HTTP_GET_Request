@@ -30,11 +30,11 @@ while True:
 # Get status code
 status_code = int(response.split(b"\r\n")[0].split()[1])
 
-# Extract headers from the response
-headers = response.split(b"\r\n\r\n")
+# Separate headers from the body and extract headers from the response
+headers = response.split(b"\r\n\r\n")[0]
 
 # Print status code
-print("status code:",status_code)
+print("Status code:",status_code)
 
 # Print headers
 print("Headers:")
