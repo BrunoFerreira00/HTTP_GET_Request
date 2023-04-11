@@ -2,7 +2,7 @@ from socket import *
 
 # Setting the host and the port
 HOST = "127.0.0.1"
-PORT = 80
+PORT = 80 #HTTP Port
 
 # Set TCP connection
 server_socket = socket(AF_INET,SOCK_STREAM)
@@ -43,3 +43,4 @@ for header in headers.split(b"\r\n"):
 
 # Close connection
 server_socket.close()
+    
