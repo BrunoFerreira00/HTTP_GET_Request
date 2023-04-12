@@ -1,7 +1,7 @@
 from socket import *
 
 # Setting the host and the port
-HOST = "127.0.0.1"
+HOST = "194.210.199.5"
 PORT = 80 #HTTP Port
 
 # Set TCP connection
